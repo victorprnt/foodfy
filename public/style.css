@@ -1,0 +1,241 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+}
+
+header {
+    padding-top: 3%;
+    margin: 0 15vw;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+#home_logo {
+    margin-right: 6%;
+}
+
+.sobre,
+.receitas {
+    margin: auto 2%;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+
+.wrapper {
+    margin: 32px 15vw;
+}
+
+.banner {
+    position: relative;
+    max-width: 70vw;
+    height: 360px;
+    background-color: #fbdfdb;
+    border-radius: 30px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__info {
+    padding: 0 5%;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.banner__title {
+    max-width: 305px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.banner__text {
+    padding-top: 12px;
+    max-width: 315px;
+    opacity: 0.8;
+}
+
+.banner__image {
+    position: absolute;
+    padding: 0 10%;
+    right: 0;
+    bottom: 0;
+}
+
+/* === CARDS === */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* .card {} */
+
+.container__image {
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.container__title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-top: 6px;
+}
+
+.container__author {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 6px;
+}
+
+
+/* === FOOTER === */
+
+.footer {
+    background: #eeeeee;
+    margin: 48px 0 0;
+    display: flex;
+    width: 100%;
+    height: 62px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: auto auto;
+    color: #999999;
+    text-align: center;
+}
+
+
+
+/* === ABOUT PAGE === */
+
+.text_container {
+    margin: 36px 0;
+}
+
+.title_paragraph {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    margin-top: 16px;
+}
+
+.text_paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    padding: 12px 0;
+}
+
+/* === MODAL === */
+
+.modal_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.modal .modal_content {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_title {
+    padding-top: 30vh;
+    position: relative;
+}
+
+.modal .modal_title p {
+    text-align: center;
+    color: #111111;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.modal_author {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .modal_author p {
+    text-align: center;
+    color: #777777;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.modal .modal_content iframe {
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+}
+
+.close_modal {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.close_modal a {
+    color: #999999;
+    cursor: pointer;
+}
+
+
+/* === MODAL.ACTIVE=== */
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
