@@ -1,6 +1,6 @@
 module.exports = [
     {
-        id: 'burger',
+        id: 0,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
         title: 'Triplo bacon burger',
         author: 'Jorge Relato',
@@ -25,7 +25,7 @@ module.exports = [
     },
 
     {
-        id: 'pizza',
+        id: 1,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
         title: 'Pizza 4 estações',
         author: 'Fabiana Melo',
@@ -54,7 +54,7 @@ module.exports = [
     },
 
     {
-        id: 'asinha',
+        id: 2,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
         title: 'Asinhas de frango ao barbecue',
         author: 'Vania Steroski',
@@ -73,7 +73,7 @@ module.exports = [
     },
 
     {
-        id: 'lasanha',
+        id: 3,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
         title: "Lasanha mac n' cheese",
         author: 'Juliano Vieira',
@@ -95,7 +95,7 @@ module.exports = [
     },
 
     {
-        id: 'espaguete',
+        id: 4,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
         title: 'Espaguete ao alho',
         author: 'Júlia Kinoto',
@@ -121,7 +121,7 @@ module.exports = [
     },
 
     {
-        id: 'doce',
+        id: 5,
         image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
         title: 'Docinhos pão-do-céu',
         author: 'Ricardo Golvea',

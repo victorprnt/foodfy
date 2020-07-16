@@ -28,17 +28,21 @@ header {
     margin-right: 6%;
 }
 
-.sobre,
-.receitas {
+.link {
     margin: auto 2%;
     font-size: 16px;
     line-height: 19px;
-    
+}
+
+.link.selected {
+    font-weight: bold;
 }
 
 .wrapper {
     margin: 32px 15vw;
 }
+
+/* === HOME === */
 
 .banner {
     position: relative;
@@ -55,23 +59,24 @@ header {
     padding: 0 5%;
     font-size: 18px;
     line-height: 28px;
+    width: 40%;
 }
 
 .banner__title {
-    max-width: 305px;
+    max-width: 100%;
     font-size: 32px;
     font-weight: bold;
 }
 
 .banner__text {
     padding-top: 12px;
-    max-width: 315px;
+    max-width: 100%;
     opacity: 0.8;
 }
 
 .banner__image {
     position: absolute;
-    padding: 0 10%;
+    padding: 0 20%;
     right: 0;
     bottom: 0;
 }
@@ -82,8 +87,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-
-/* .card {} */
 
 .container__image {
     display: inline-block;
@@ -239,3 +242,56 @@ header {
     visibility: visible;
 }
 
+/* === RECIPE === */
+
+.recipe_image {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.recipe_image img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.recipe_title_container {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.recipe_author_container {
+    font-size: 20px;
+    line-height: 24px;
+    color: #777777;
+    text-align: center;
+    margin: 8px auto;
+}
+
+.recipe_titles {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+
+.ingredient_text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    /* margin: 20px auto; */
+}
+
+.ingredients ul {
+    position: relative;
+    left: 20px;
+}
+
+/* === 404 === */
+
+.not_found_container {
+    margin: 25% 0;
+}
+
+.not_found_container h1, h2 {
+    text-align: center;
+}
