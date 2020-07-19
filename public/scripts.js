@@ -6,6 +6,8 @@ const url = window.location.href
 for (const card of cards) {
     card.addEventListener("click", function() {
         const cardId = card.getAttribute("id")
+
+        window.location.href = `/recipes/${cardId}`
         // const author = card.querySelector(".container__author p")
         // const title = card.querySelector(".container__title p")
       
@@ -22,8 +24,6 @@ for (const card of cards) {
 
 for (const link of links) {
     if (link.href == url) {
-        console.log(`URL: ${url}`)
-        console.log(`PAGE: ${link.href}`)
         link.classList.add("selected")
     }
 }
